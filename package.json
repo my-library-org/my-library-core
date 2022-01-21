@@ -1,6 +1,6 @@
 {
   "name": "my-library-core",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "this is library of react components and some functions useful for development",
   "keywords": [
     "react",

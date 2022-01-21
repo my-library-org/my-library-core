@@ -21,7 +21,7 @@ import {
     Box as Aside,
     Box as Footer,
     Box
-} from '../lib/components'
+} from 'my-library-core'
 
 function App() {
   const style = {h: '500px'}
