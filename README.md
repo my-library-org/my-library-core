@@ -59,21 +59,21 @@ and result will be this:
 
 ## overview
 this project has the following:<br />
-dependencies:<br />
+<b>dependencies:</b><br />
     styled-components <br />
-components: <br />
+<b>components:</b> <br />
     Box<br />
     Card<br />
     Moda><br />
     MyBtn<br />
     Navbar<br />
-functions: <br />
-    <>customizer<br />
-const: <br />
+<b>functions:</b> <br />
+    customizer<br />
+<b>const:</b> <br />
     Breakpoints<br />
     Layers<br />
     LayersBootstrap<br />
     MyColors<br />
     MyThemeColors<br />
-provider:<br />
-    <>MyContext<br />
+<b>provider:</b><br />
+    MyContext<br />
