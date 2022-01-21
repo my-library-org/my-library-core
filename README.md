@@ -60,20 +60,20 @@ and result will be this:
 ## overview
 this project has the following:<br />
 dependencies:<br />
-    <b>styled-components</b> <br />
+    styled-components <br />
 components: <br />
-    <b>Box</b><br />
-    <b>Card</b><br />
-    <b>Modal</b><br />
-    <b>MyBtn</b><br />
-    <b>Navbar</b><br />
+    Box<br />
+    Card<br />
+    Moda><br />
+    MyBtn<br />
+    Navbar<br />
 functions: <br />
-    <b>customizer</b><br />
+    <>customizer<br />
 const: <br />
-    <b>Breakpoints</b><br />
-    <b>Layers</b><br />
-    <b>LayersBootstrap</b><br />
-    <b>MyColors</b><br />
-    <b>MyThemeColors</b><br />
+    Breakpoints<br />
+    Layers<br />
+    LayersBootstrap<br />
+    MyColors<br />
+    MyThemeColors<br />
 provider:<br />
-    <b>MyContext</b><br />
+    <>MyContext<br />
