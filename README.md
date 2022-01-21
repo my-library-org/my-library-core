@@ -24,7 +24,6 @@ import {
 } from 'my-library-core'
 
 function App() {
-  const style = {h: '500px'}
   return (
     <Wrapper 
         grid

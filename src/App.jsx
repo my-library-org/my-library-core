@@ -1,7 +1,6 @@
 import {Box} from '../lib/components'
 
 function App() {
-  const style = {h: '500px'}
   return (
     <Box 
         grid
