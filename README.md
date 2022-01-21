@@ -64,7 +64,7 @@ this project has the following:<br />
 <b>components:</b> <br />
     Box<br />
     Card<br />
-    Moda><br />
+    Modal<br />
     MyBtn<br />
     Navbar<br />
 <b>functions:</b> <br />
