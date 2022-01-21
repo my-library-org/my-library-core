@@ -30,8 +30,6 @@ function App() {
         gap="10px"
         type="lg" 
         cols="1fr 1fr 1fr" 
-        y="start"
-        myStyle={{ai: 'start'}}
         areas="
             'header header header'
             'main main aside'
