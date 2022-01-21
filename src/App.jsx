@@ -1,44 +1,29 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import {Box} from '../lib/components'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const style = {h: '500px'}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    <Box 
+        grid
+        gap="10px"
+        type="lg" 
+        cols="1fr 1fr 1fr" 
+        y="start"
+        areas="
+            'header header header'
+            'main main aside'
+            'footer footer footer'
+        "
+      >
+        <Box header h='80px' bg="#ccc" span="header"/>
+        <Box main flex wrap span="main">
+          <Box  h='200px' bg="#909A9B" m="0 0 5px 0"/>
+          <Box  h='200px' bg="#909A9B" m="5px 0"/>
+          <Box  h='200px' bg="#909A9B" m="5px 0"/>
+        </Box>
+        <Box aside h='400px'bg="#CACACA" m="0" span="aside"/>
+        <Box footer h='80px'bg="#ccc" span="footer"/>
+    </Box>
   )
 }
 
