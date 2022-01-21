@@ -14,12 +14,19 @@ yarn add my-library-core
 ## demo
     this is little example of one of the components
 ```jsx
-import {Box} from '../lib/components'
+import {
+    Box as Wrapper,
+    Box as Header,
+    Box as Main,
+    Box as Aside,
+    Box as Footer,
+    Box
+} from '../lib/components'
 
 function App() {
   const style = {h: '500px'}
   return (
-    <Box 
+    <Wrapper 
         grid
         gap="10px"
         type="lg" 
@@ -32,15 +39,15 @@ function App() {
             'footer footer footer'
         "
       >
-        <Box header h='80px' bg="#ccc" span="header"/>
-        <Box main flex wrap span="main">
+        <Header header h='80px' bg="#ccc" span="header"/>
+        <Main main flex wrap span="main">
           <Box  h='200px' bg="#909A9B" m="0 0 5px 0"/>
           <Box  h='200px' bg="#909A9B" m="5px 0"/>
           <Box  h='200px' bg="#909A9B" m="5px 0"/>
-        </Box>
-        <Box aside h='400px'bg="#CACACA" m="0" span="aside"/>
-        <Box footer h='80px'bg="#ccc" span="footer"/>
-    </Box>
+        </Main>
+        <Aside aside h='400px'bg="#CACACA" m="0" span="aside"/>
+        <Footer footer h='80px'bg="#ccc" span="footer"/>
+    </Wrapper>
   )
 }
 
