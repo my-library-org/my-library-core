@@ -47,7 +47,7 @@ function App() {
 export default App
 ```
 and result will be this:
-![Screenshot](src/assets/Capture.png)
+![Screenshot](src/assets/Capture.PNG)
 
 
 ## overview
