@@ -1,13 +1,14 @@
 {
   "name": "my-library-core",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "this is library of react components and some functions useful for development",
-  "keywords": ["react", "components"],
-
-  
-
-
-  "files": ["dist"],
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -17,19 +18,11 @@
       "import": "./dist/index.es.js"
     }
   },
-
-
-
-
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-
-
-
   "peerDependencies": {
     "react": "^16.8.0",
     "react-dom": "^17.0.2",
@@ -43,8 +36,18 @@
   },
   "dependencies": {
     "styled-components": "^5.3.3"
-  }
-  
- 
-
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/my-library-org/my-library-core.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/my-library-org/my-library-core/issues"
+  },
+  "homepage": "https://github.com/my-library-org/my-library-core#readme"
 }
