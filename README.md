@@ -58,22 +58,22 @@ and result will be this:
 
 
 ## overview
-this project has the following:
-dependencies:
-    <b>styled-components</b>
-components: 
-    <b>Box</b>
-    <b>Card</b>
-    <b>Modal</b>
-    <b>MyBtn</b>
-    <b>Navbar</b>
-functions: 
-    <b>customizer</b>
-const: 
-    <b>Breakpoints</b>
-    <b>Layers</b>
-    <b>LayersBootstrap</b>
-    <b>MyColors</b>
-    <b>MyThemeColors</b>
-provider:
-    <b>MyContext</b>
+this project has the following:<br />
+dependencies:<br />
+    <b>styled-components</b> <br />
+components: <br />
+    <b>Box</b><br />
+    <b>Card</b><br />
+    <b>Modal</b><br />
+    <b>MyBtn</b><br />
+    <b>Navbar</b><br />
+functions: <br />
+    <b>customizer</b><br />
+const: <br />
+    <b>Breakpoints</b><br />
+    <b>Layers</b><br />
+    <b>LayersBootstrap</b><br />
+    <b>MyColors</b><br />
+    <b>MyThemeColors</b><br />
+provider:<br />
+    <b>MyContext</b><br />
