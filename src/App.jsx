@@ -14,7 +14,7 @@ function App() {
             'footer footer footer'
         "
       >
-        <Box header h='80px' bg="#ccc" span="header"/>
+        <Box type="header" h='80px' bg="#ccc" span="header"/>
         <Box main flex wrap span="main">
           <Box  h='200px' bg="#909A9B" m="0 0 5px 0"/>
           <Box  h='200px' bg="#909A9B" m="5px 0"/>

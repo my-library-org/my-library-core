@@ -1,17 +1,17 @@
 # my-library-core
 this is a library of react components and other useful functions for development
 
-## installation
+## Installation
 
 ### npm
 ```bash
-npm install my-library-core --save
+npm install my-library-core 
 ```
 ### yarn 
 ```bash
 yarn add my-library-core
 ```
-## demo
+## Demo
     this is little example of one of the components
 ```jsx
 import {
@@ -28,7 +28,7 @@ function App() {
     <Wrapper 
         grid
         gap="10px"
-        type="lg" 
+        size="lg" 
         cols="1fr 1fr 1fr" 
         areas="
             'header header header'
@@ -54,7 +54,7 @@ and result will be this:
 ![Screenshot](src/assets/Capture.PNG)
 
 
-## overview
+## Overview
 this project has the following:<br />
 <b>dependencies:</b><br />
     styled-components <br />
