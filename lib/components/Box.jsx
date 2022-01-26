@@ -1,5 +1,5 @@
 import styled from 'styled-components'; 
-import {Customizer} from '../main'
+import {customizer} from '../main'
 import {getCommon, getGrid, getFlex} from '../functions'
 import {useComponentContext} from '../MyContext'
 
@@ -15,8 +15,8 @@ const Section =  styled.section`
     ${(...rest)=>getGrid(...rest)}
     ${(...rest)=>getFlex(...rest)}
 
-    ${({myStyle}) => myStyle && Customizer(myStyle)}
-    ${({superStyle}) => superStyle && Customizer(superStyle)}
+    ${({myStyle}) => myStyle && customizer(myStyle)}
+    ${({superStyle}) => superStyle && customizer(superStyle)}
     ${({insertStyle}) => insertStyle && insertStyle}
 `
 const Article =  styled.article`
@@ -29,8 +29,8 @@ const Article =  styled.article`
     ${(...rest)=>getGrid(...rest)}
     ${(...rest)=>getFlex(...rest)}
 
-    ${({myStyle}) => myStyle && Customizer(myStyle)}
-    ${({superStyle}) => superStyle && Customizer(superStyle)}
+    ${({myStyle}) => myStyle && customizer(myStyle)}
+    ${({superStyle}) => superStyle && customizer(superStyle)}
     ${({insertStyle}) => insertStyle && insertStyle}
 `
 const Nav =  styled.nav`
@@ -40,8 +40,8 @@ const Nav =  styled.nav`
     ${(...rest)=>getGrid(...rest)}
     ${(...rest)=>getFlex(...rest)}
 
-    ${({myStyle}) => myStyle && Customizer(myStyle)}
-    ${({superStyle}) => superStyle && Customizer(superStyle)}
+    ${({myStyle}) => myStyle && customizer(myStyle)}
+    ${({superStyle}) => superStyle && customizer(superStyle)}
     ${({insertStyle}) => insertStyle && insertStyle}
 `
 const Header =  styled.header`
@@ -53,8 +53,8 @@ const Header =  styled.header`
     ${(...rest)=>getGrid(...rest)}
     ${(...rest)=>getFlex(...rest)}
 
-    ${({myStyle}) => myStyle && Customizer(myStyle)}
-    ${({superStyle}) => superStyle && Customizer(superStyle)}
+    ${({myStyle}) => myStyle && customizer(myStyle)}
+    ${({superStyle}) => superStyle && customizer(superStyle)}
     ${({insertStyle}) => insertStyle && insertStyle}
    
 `
@@ -67,8 +67,8 @@ const Form =  styled.form`
     ${(...rest)=>getGrid(...rest)}
     ${(...rest)=>getFlex(...rest)}
 
-    ${({myStyle}) => myStyle && Customizer(myStyle)}
-    ${({superStyle}) => superStyle && Customizer(superStyle)}
+    ${({myStyle}) => myStyle && customizer(myStyle)}
+    ${({superStyle}) => superStyle && customizer(superStyle)}
     ${({insertStyle}) => insertStyle && insertStyle}
 
 `
@@ -81,8 +81,8 @@ const Aside =  styled.aside`
     ${(...rest)=>getGrid(...rest)}
     ${(...rest)=>getFlex(...rest)}
 
-    ${({myStyle}) => myStyle && Customizer(myStyle)}
-    ${({superStyle}) => superStyle && Customizer(superStyle)}
+    ${({myStyle}) => myStyle && customizer(myStyle)}
+    ${({superStyle}) => superStyle && customizer(superStyle)}
     ${({insertStyle}) => insertStyle && insertStyle}
 
 `
@@ -95,8 +95,8 @@ const Main =  styled.div`
     ${(...rest)=>getGrid(...rest)}
     ${(...rest)=>getFlex(...rest)}
 
-    ${({myStyle}) => myStyle && Customizer(myStyle)}
-    ${({superStyle}) => superStyle && Customizer(superStyle)}
+    ${({myStyle}) => myStyle && customizer(myStyle)}
+    ${({superStyle}) => superStyle && customizer(superStyle)}
     ${({insertStyle}) => insertStyle && insertStyle}
 
 `
@@ -109,8 +109,8 @@ const Footer =  styled.div`
     ${(...rest)=>getGrid(...rest)}
     ${(...rest)=>getFlex(...rest)}
 
-    ${({myStyle}) => myStyle && Customizer(myStyle)}
-    ${({superStyle}) => superStyle && Customizer(superStyle)}
+    ${({myStyle}) => myStyle && customizer(myStyle)}
+    ${({superStyle}) => superStyle && customizer(superStyle)}
     ${({insertStyle}) => insertStyle && insertStyle}
 
 `
@@ -123,8 +123,8 @@ const Container =  styled.div`
     ${(...rest)=>getGrid(...rest)}
     ${(...rest)=>getFlex(...rest)}
 
-    ${({myStyle}) => myStyle && Customizer(myStyle)}
-    ${({superStyle}) => superStyle && Customizer(superStyle)}
+    ${({myStyle}) => myStyle && customizer(myStyle)}
+    ${({superStyle}) => superStyle && customizer(superStyle)}
     ${({insertStyle}) => insertStyle && insertStyle}
 
 `

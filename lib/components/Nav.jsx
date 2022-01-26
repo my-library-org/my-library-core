@@ -1,5 +1,5 @@
 import styled from 'styled-components'; 
-import {Customizer} from '../main'
+import {customizer} from '../main'
 import {getCommon, getGrid, getFlex} from '../functions'
 import {useComponentContext} from '../MyContext'
 
@@ -11,8 +11,8 @@ const Container =  styled.nav`
     ${(...rest)=>getGrid(...rest)}
     ${(...rest)=>getFlex(...rest)}
 
-    ${({myStyle}) => myStyle && Customizer(myStyle)}
-    ${({superStyle}) => superStyle && Customizer(superStyle)}
+    ${({myStyle}) => myStyle && customizer(myStyle)}
+    ${({superStyle}) => superStyle && customizer(superStyle)}
     ${({insertStyle}) => insertStyle && insertStyle}
    
 `

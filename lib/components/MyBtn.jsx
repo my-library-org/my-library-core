@@ -1,7 +1,7 @@
 //-----------------IMPORTS---------------
 import React from 'react';
 import styled from "styled-components"
-import {Customizer, MyThemeColors as colors}  from "../main";
+import {customizer, MyThemeColors as colors}  from "../main";
 import {useComponentContext} from '../MyContext'
 
 //---------------END_IMPORTS---------------
@@ -163,12 +163,12 @@ const Button = styled.button`
      )
    }
   /* custom */
-  ${({contextStyle})=> contextStyle && Customizer(contextStyle)}
-  ${({myStyle})=> myStyle && Customizer(myStyle)}
-  ${({superStyle})=> superStyle && Customizer(superStyle)}
+  ${({contextStyle})=> contextStyle && customizer(contextStyle)}
+  ${({myStyle})=> myStyle && customizer(myStyle)}
+  ${({superStyle})=> superStyle && customizer(superStyle)}
   ${({insertStyle})=> insertStyle && insertStyle}
   /* disabled */
-  ${({disabled, ghost}) => disabled && Customizer({
+  ${({disabled, ghost}) => disabled && customizer({
       c: colorDisable, 
       cursor: 'no-drop',
       bxSw: 'none',
@@ -177,7 +177,7 @@ const Button = styled.button`
       b: ghost ? '1px solid' + colors.disabled.main : 'none',
   })}
 
-  ${({myDisabled, disabled}) => disabled && Customizer(myDisabled)}
+  ${({myDisabled, disabled}) => disabled && customizer(myDisabled)}
 `;
 //----------END_STYLED_COMPONENTS----------
 const MyBtn = ({className, myRef, children, ...rest}) => {
