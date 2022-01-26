@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box}  from './index'
+import {Header, Nav}  from './index'
 import {useComponentContext} from '../MyContext'
 
 const headerStyles = {
@@ -17,17 +17,14 @@ const navStyles = {
 const Navbar = ({children, location, header, nav, position, ...rest}) => {
     const {...props} = useComponentContext() || false
     return (
-        <Box
-            header
+        <Header
             insertStyleBefore={headerStyles[location || 'top'] + ".active {font-weight: 500;}"}
             myStyle={{pt: position, m: '0px'}}
             superStyle={header}
             {...props}
             {...rest}
-           
         >
-            <Box
-                nav
+            <Nav
                 flex
                 x="space-between"
                 insertStyleBefore={navStyles[location || 'top']}
@@ -35,8 +32,8 @@ const Navbar = ({children, location, header, nav, position, ...rest}) => {
                 superStyle={nav}
             >
                 {children}
-            </Box>
-        </Box>
+            </Nav>
+        </Header>
     )
 }
 export default Navbar

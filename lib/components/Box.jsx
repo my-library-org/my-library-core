@@ -1,13 +1,25 @@
-import React from 'react';
 import styled from 'styled-components'; 
 import {Customizer} from '../main'
 import {getCommon, getGrid, getFlex} from '../functions'
 import {useComponentContext} from '../MyContext'
 
 
-
 //------------------------------------------------------------
 const Section =  styled.section`
+    width: 100%;
+    margin: auto;
+
+    ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
+
+    ${(...rest)=>getCommon(...rest)}
+    ${(...rest)=>getGrid(...rest)}
+    ${(...rest)=>getFlex(...rest)}
+
+    ${({myStyle}) => myStyle && Customizer(myStyle)}
+    ${({superStyle}) => superStyle && Customizer(superStyle)}
+    ${({insertStyle}) => insertStyle && insertStyle}
+`
+const Article =  styled.article`
     width: 100%;
     margin: auto;
 
@@ -121,7 +133,7 @@ const Container =  styled.div`
 
 const Box = ({
     className, myRef, children, 
-    container, header,nav, section, aside, form,main, footer,
+    container, header,nav, section, aside, form,main, footer, article,
     ...rest
 }) => {
     const {...props} = useComponentContext() || false
@@ -132,6 +144,11 @@ const Box = ({
             <Header  {...props} {...rest} ref={myRef} className={className}>
                 {children}
             </Header>
+            :
+            article ?
+            <Article  {...props} {...rest} ref={myRef} className={className}>
+                {children}
+            </Article>
             :
             nav ? 
             <Nav  {...props} {...rest} ref={myRef} className={className}>
