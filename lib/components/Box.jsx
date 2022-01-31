@@ -114,6 +114,7 @@ const Footer =  styled.div`
     ${({insertStyle}) => insertStyle && insertStyle}
 
 `
+
 const Container =  styled.div`
     width: 100%;
     margin: auto;

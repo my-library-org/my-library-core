@@ -53,24 +53,3 @@ export default App
 and result will be this:
 ![Screenshot](src/assets/Capture.PNG)
 
-
-## Overview
-this project has the following:<br />
-<b>dependencies:</b><br />
-    styled-components <br />
-<b>components:</b> <br />
-    Box<br />
-    Card<br />
-    Modal<br />
-    MyBtn<br />
-    Navbar<br />
-<b>functions:</b> <br />
-    customizer<br />
-<b>const:</b> <br />
-    Breakpoints<br />
-    Layers<br />
-    LayersBootstrap<br />
-    MyColors<br />
-    MyThemeColors<br />
-<b>provider:</b><br />
-    MyContext<br />
