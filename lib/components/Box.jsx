@@ -86,7 +86,7 @@ const Aside =  styled.aside`
     ${({insertStyle}) => insertStyle && insertStyle}
 
 `
-const Main =  styled.div`
+const Main =  styled.main`
     width: 100%;
     margin: auto;
     ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
@@ -100,7 +100,7 @@ const Main =  styled.div`
     ${({insertStyle}) => insertStyle && insertStyle}
 
 `
-const Footer =  styled.div`
+const Footer =  styled.footer`
     width: 100%;
     margin: auto;
     ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
