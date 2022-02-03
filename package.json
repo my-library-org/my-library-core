@@ -1,6 +1,6 @@
 {
   "name": "my-library-core",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "this is library of react components and some functions useful for development",
   "keywords": [
     "react",
@@ -28,9 +28,9 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "@vitejs/plugin-react": "^1.0.7",
     "vite": "^2.7.2"
   },
   "dependencies": {
