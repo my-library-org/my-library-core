@@ -1,13 +1,13 @@
 import styled from 'styled-components'; 
 import {customizer, TextTypes} from '../main'
-import {getTextStyle} from '../functions'
+import {getCommon} from '../functions'
 import {useComponentContext} from '../MyContext'
 
 const P = styled.p`
 ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
 
 ${({type})=> type && TextTypes[type]}
-${(...rest)=>getTextStyle(...rest)}
+${(...rest)=>getCommon(...rest)}
 
 
 ${({myStyle}) => myStyle && customizer(myStyle)}

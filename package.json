@@ -1,6 +1,6 @@
 {
   "name": "my-library-core",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "this is library of react components and some functions useful for development",
   "keywords": [
     "react",
@@ -28,9 +28,14 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "@vitejs/plugin-react": "^1.0.7",
+    "babel-jest": "^27.4.6",
+    "jest": "^27.4.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
     "vite": "^2.7.2"
   },
   "dependencies": {

@@ -1,14 +1,15 @@
 import styled from 'styled-components'; 
-import {customizer, TitleTypes} from '../main'
-import {getTextStyle} from '../functions'
+import {customizer, TextTypes} from '../main'
+import {getCommon} from '../functions'
 import {useComponentContext} from '../MyContext'
+
 
 const H1 = styled.h1`
 
     ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
 
-    ${({type})=> type && TitleTypes[type]}
-    ${(...rest)=>getTextStyle(...rest)}
+    ${({type})=> type && TextTypes[type]}
+    ${(...rest)=>getCommon(...rest)}
 
 
     ${({myStyle}) => myStyle && customizer(myStyle)}
@@ -19,7 +20,7 @@ const H2 = styled.h2`
 
     ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
 
-    ${(...rest)=>getTextStyle(...rest)}
+    ${(...rest)=>getCommon(...rest)}
 
 
     ${({myStyle}) => myStyle && customizer(myStyle)}
@@ -30,7 +31,7 @@ const H3 = styled.h3`
 
     ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
 
-    ${(...rest)=>getTextStyle(...rest)}
+    ${(...rest)=>getCommon(...rest)}
 
 
     ${({myStyle}) => myStyle && customizer(myStyle)}
@@ -41,7 +42,7 @@ const H4 = styled.h4`
 
     ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
 
-    ${(...rest)=>getTextStyle(...rest)}
+    ${(...rest)=>getCommon(...rest)}
 
 
     ${({myStyle}) => myStyle && customizer(myStyle)}
@@ -52,7 +53,7 @@ const H5 = styled.h5`
 
     ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
 
-    ${(...rest)=>getTextStyle(...rest)}
+    ${(...rest)=>getCommon(...rest)}
 
 
     ${({myStyle}) => myStyle && customizer(myStyle)}
@@ -63,7 +64,7 @@ const H6 = styled.h6`
 
     ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
 
-    ${(...rest)=>getTextStyle(...rest)}
+    ${(...rest)=>getCommon(...rest)}
 
 
     ${({myStyle}) => myStyle && customizer(myStyle)}

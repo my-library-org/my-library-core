@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from "styled-components"
 import {customizer, MyThemeColors as colors}  from "../main";
+import {getCommon} from '../functions'
 import {useComponentContext} from '../MyContext'
 
 //---------------END_IMPORTS---------------
@@ -67,7 +68,6 @@ const Button = styled.button`
     cursor: pointer;
     transition: 0.1s;
     border: none;
-
     :hover{
       transition: 0.1s
     }
@@ -78,12 +78,9 @@ const Button = styled.button`
 
    /* dinamyc */
   ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
-  ${({
-      rounded, fullRounded, size, 
-      width, w, height, h, bg, background, 
-      padding, p, margin, m, props
-    })=> `
-    ${rounded ? 'border-radius: 5px' : fullRounded ? 'border-radius: 100px' : ''};
+
+  ${({ size })=> `
+    
     ${size ? 
       `
         font-family:${sizes[size + 'Font']};
@@ -96,18 +93,7 @@ const Button = styled.button`
         padding:${sizes.mediumPadding};
         margin:${sizes.mediumMargin}; 
       `
-    }
-    ${width && 'width:' + width};
-    ${w && 'width:' + w};
-    ${height && 'height:' + height};
-    ${h && 'height:' + h};
-    ${background && 'background:' + height};
-    ${bg && 'background:' + bg};
-    ${padding && 'padding:' + padding};
-    ${p && 'padding:' + p};
-    ${margin && 'margin:' + margin};
-    ${m && 'margin:' + m};
-    
+    } 
     
   `}
  
@@ -162,6 +148,17 @@ const Button = styled.button`
     
      )
    }
+
+  ${({
+    size, rounded, fullRounded, raised, span, 
+    width, w, height, h, bg, background, 
+    padding, p, margin, m, layer, z, 
+  })=>getCommon({
+    size: false, rounded, fullRounded, raised, span, 
+    width, w, height, h, bg, background, 
+    padding, p, margin, m, layer, z, 
+  })}
+
   /* custom */
   ${({contextStyle})=> contextStyle && customizer(contextStyle)}
   ${({myStyle})=> myStyle && customizer(myStyle)}

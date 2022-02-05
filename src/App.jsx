@@ -1,10 +1,10 @@
-import { Box, Title, Text, Paragraph} from "../lib/components";
+import { Box, Title, Text, Paragraph, MyBtn} from "../lib/components";
 
 import {createTheme} from "../lib/main/"
 
 createTheme({
   prop1: 'green',
-  rop2: {
+  prop2: {
     prop1: 'blue'
   },
   prop3: {
@@ -35,27 +35,28 @@ createTheme({
 function App() {
 
   return (
+    <>
+    <MyBtn size="large" primary w="300px" >
+        button
+    </MyBtn>
+    
     <Box
       grid
-      gap="10px"
-      type="mayor"
-      cols="1fr 1fr 1fr"
+      gap="[gap]"
+      type="[mayor]"
+      cols="[cols]"
       areas="
             'header header header'
             'main main aside'
             'footer footer footer'
         "
-        myStyle={{
-          bg: '--prop1.prop2',
-          c: 'red',
-          'h1': {c: 'orange'},
-          break: {sm: {bg: '--prop2.prop1', 'h1': {c: 'red'}}}
-      }}
+      
     >
       
       <Box type="header" h="80px" bg="#ccc" span="header" />
       <Box main flex wrap span="main">
       <h1>hola</h1>
+      
         <Text text="center" c="#ccc">
           <Title text="center">titulo del articulo</Title>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis at consectetur reiciendis quo, labore optio nam dolor nesciunt eos veritatis. Qui incidunt iusto assumenda corporis aliquam ipsam, dolores optio.</p> <br />
@@ -70,6 +71,7 @@ function App() {
       <Box aside h="400px" bg="#CACACA" m="0" span="aside" />
       <Box footer h="80px" bg="#ccc" span="footer" />
     </Box>
+    </>
   );
 }
 
